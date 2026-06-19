@@ -1,0 +1,191 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth; /* Faz a tela descer suavemente ao clicar nos links */
+}
+
+body {
+    background-color: #f4f5f9;
+    color: #333;
+}
+
+/* Cabeçalho Fixo */
+header {
+    background-color: #0c1052; /* Azul Escuro da New Tech */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: #8c9eff;
+}
+
+/* Configuração da Logo no Cabeçalho */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaço entre a imagem da logo e o texto */
+}
+
+.logo-img {
+    height: 90px; 
+    border-radius: 8px; 
+    object-fit: cover;
+}
+
+
+/* Seção Início (Hero) com a imagem de fundo */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Camada azul transparente +  imagem */
+    background: linear-gradient(rgba(12, 16, 82, 0.5), rgba(36, 43, 194, 0.3)), url('fundo.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: #0c1052;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #8c9eff;
+    color: white;
+}
+
+/* Seção de Serviços e Carrossel */
+#servicos {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#servicos h2 {
+    color: #0c1052;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.carrossel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carrossel-track {
+    display: flex;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 0;
+    width: 80%;
+}
+
+.card {
+    min-width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    border-top: 5px solid #242bc2;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+}
+
+.card h3 {
+    color: #242bc2;
+    margin-bottom: 15px;
+}
+
+.btn-carrossel {
+    background-color: #0c1052;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+.btn-carrossel:hover {
+    background-color: #242bc2;
+}
+
+/* Rodapé de Contato */
+#contato {
+    background-color: #e2e5ff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contato h2 {
+    color: #0c1052;
+    margin-bottom: 10px;
+}
+
+#contato p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn-whatsapp {
+    background-color: #25D366; 
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe57;
+}
